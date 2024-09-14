@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bgm test</title>
+</head>
+<body>
+    <img src="image.png" alt="omatsuri ningen">
+    <div id="audio_area"></div>
+    <button onclick="start_bgm()">start bgm</button>
+    <button onclick="stop_bgm()">stop bgm</button>
+    <script>
+        audio_area = document.getElementById('audio_area');
+        function start_bgm(){
+            audio_area.innerHTML = '<audio src="maou_bgm_ethnic09.mp3" autoplay loop></audio>'
+        }
+        function stop_bgm(){
+            audio_area.innerHTML = ''
+        }
+
+    </script>
+</body>
+</html>
